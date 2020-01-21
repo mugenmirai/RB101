@@ -19,3 +19,11 @@ step 1 takes two keyword arguments(named arguments) :by :to (symbol)
 It will execute the block for each value in the iteration.
 
 When looking at docs, check whether a particular method isn't being overridden by the subclass.
+
+
+TRÉS IMPORTANT
+	Enumerable Module
+	one of the most common used mix-ins.
+	It provides further functionality to iterate through collections (array, hash, range)
+
+YAML docs // 
