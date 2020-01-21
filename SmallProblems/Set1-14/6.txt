@@ -1,0 +1,15 @@
+5.step(to: 10, by: 3) {|value| puts value }
+
+It will execute the block for each value in the iteration.
+
+This should output to the screen, the returned value of invoking the step method on integer 5.
+
+This will skip to number 10 in increments of 3.
+
+so it should start with 5, then 5+3=8, then stop since the next value will be 11 going over 10.
+
+
+#NUMERIC!!!!
+
+calling .superclass helped me get to this solution.
+

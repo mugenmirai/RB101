@@ -1,0 +1,21 @@
+Positional Arguments are filled out first, then the default arguments are set with any values supplied, and finally default values are applied to anything remaining.
+In this exercise x x x are assigned to the positional arguments a b d
+x overrides the default for balue b, c is not set to any of the listed values, and is assigned default value x.
+
+
+#bsearch
+
+takes only one argument (block) returns an element of the array, block is required, and that it takes one argument.
+operating in what is called "FIND-MINIMUM MODE"
+
+multiple lines in a signature indicates that an argument is optional.
+Array#fetch does 'bounds checking' //whether the specified element actually exists before fetching it.
+
+second form returns the value of the default argument if the element does not exist
+third form returns the value returned by the block
+
+#step has 4 calling signatures
+step 1 takes two keyword arguments(named arguments) :by :to (symbol)
+It will execute the block for each value in the iteration.
+
+When looking at docs, check whether a particular method isn't being overridden by the subclass.

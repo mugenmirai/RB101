@@ -1,0 +1,10 @@
+require 'date' <-we are importing the date library into our code
+
+puts Date.new
+#should generate a new zero padded date 01-01 
+puts Date.new(2016)
+#generates date in year 2016
+puts Date.new(2016, 5)
+#Generates date in 2016, month May
+puts Date.new(2016, 5, 13)
+#May 13 2016

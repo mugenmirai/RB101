@@ -1,0 +1,5 @@
+a = %w(a b c d e)
+a 5 element array containing strings
+puts a.fetch(7) #error  -> learn 'IndexError'
+puts a.fetch(7, 'beats me')  # returns the value of the default argument
+puts a.fetch(7) { |index| index**2 }  #returns the value returned by the block.

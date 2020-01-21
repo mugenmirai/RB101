@@ -1,0 +1,9 @@
+Difference: Fille::path vs File#path
+
+:: Class method 
+# Instance metho
+
+:: <- used for name spacing as well ex of pi constant; Math::PI
+
+Class methods are called on the class
+Instance methods are called on objects of a class.
