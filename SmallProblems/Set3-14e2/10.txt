@@ -1,0 +1,3 @@
+This is not reassingment.
+Since both variables are referencing the same place in memory, invoking the #upcase method with a bang '!' mutates the caller.
+This is a destructive action taken, thus both variables now reference the result of calling #upcase! on string 'Bob'
