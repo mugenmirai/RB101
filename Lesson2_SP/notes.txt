@@ -1,0 +1,113 @@
+Snake_cakse & CamelCased 'duh': 
+
+When you define or initialize a method, variable, or file always use snake_case.
+using all lower case letters and separating words with the undersscore character.
+
+When you want to represent a value that will not change we use CONSTANTS
+
+THIS_IS_A_CONSTANT = "yes it is and it will not change*(but it can)"
+When you want to represent a value that will not change in a Ruby program.
+#### constant declaration:
+FOUR = 'four'
+FIVE = 5
+
+when working with do/end blocks, prefer {} when the entire code expression fits on one line.
+
+When declaring class names use CamelCase formatting.  (:nospaces&capseveryword)
+
+Kickoff-
+
+Learn to program proceduraly
+
+OO Programming
+
+Smorgasburg of diff topics
+
+Learning to Code vs Learning to Program
+second step - building apps and problem solving
+
+"low hanging fruit is eliminated"
+
+We're learning Application development
+web mobile & all sorts of application development
+
+
+____
+A note on style:
+
+"When you want to display something"
+"When you want to ask the user for some input"
+
+
+Calling the methods with teir respective module.
+
+Kernel.puts() Kernel.gets()
+-module methods in the Kernel module.
+"all methods come from somewhere"
+
+
+SHORT CIRCUITING:  &&, || will stop evaluating expressions once it can guarantee a return value.
+Short circuiting: Logical &, OR will stop evaluating expressions once they can guarantee a return value.
+
+The logical & operator will short circuit when it encounters the first false expression
+The logical || operator will short-circuit as soon as it encounters a true expression.
+
+RUBY considers everything to be truthy other than "false" and "nil"
+
+AN EXPRESSION THAT RUBY CONSIDERS TRUE IS NOT THE SAME AS THE TRUE OBJECT
+ *considers the integer to be truthy, does not mean that the variable is equal to true.
+
+ _____
+
+Pseudo-Code
+
+Trying to load the problem into our brain first.
+
+Two layers to solving any problem:
+
+1. The logical problem domain layer.
+2. The syntatical programming language layer.
+
+Using PseudoCode helps us focus on the logical problem domain layer, without dragging into the
+programming language layer.
+
+ssgpriwe captrain ssgpriwe
+Start staaatoh
+Set  Hajime
+Get daite
+Print
+Read yomi
+if/else if/ else
+while
+end
+
+START :	 START OF THE PROGRAM
+SET 	SET A VARIABLE WE CAN USE FOR LATER
+GET 	RETRIEVE VALUE FROM USER
+PRINT 	DISPLAYS OUTPUT TO USER
+READ RETRIEVE VALUE FROM VARIABLE
+IF/ELSE IF/ ELSE : SHOW CONDITIONAL BRANCHES IN LOGIC
+WHILE SHOW LOOPING LOGIC
+END END OF THE PROGRAM
+
+in pseudo code we can't verify that the logic is sound.
+
+Pseudo code is a guess at the solution, and there is no verification that the logic is correct.
+
+FLOWCHARTS:
+REALLY?!
+
+find out if there are method
+#valid_number?
+#valid_operator?
+
+RUBOCOP!
+
+rubocop <filename> --format offenses
+rubocop -a <filename>
+
+
+When we write ruby code that's not in a class we are working within an object called 'main' (an instance of object)
+Kernel module is automatically loaded by Object, giving us access to all of its methods.
+
+
