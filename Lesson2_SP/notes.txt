@@ -110,4 +110,19 @@ rubocop -a <filename>
 When we write ruby code that's not in a class we are working within an object called 'main' (an instance of object)
 Kernel module is automatically loaded by Object, giving us access to all of its methods.
 
+__________________________
+
+
+JUST REMEMBER: Local variables that are not initialized inside a method definition must be defined as parameters.
+
+
+methods and blocks can interact with one another, the level of that interaction is set by the METHOD DEFINITION and then used at the METHOD INVOCATION.
+
+¯\_(ツ)_/¯
+• def/end construct is method definition
+• Reference of method name is method invocation
+• Method invocation followed by do/end{} defines a block, block is part of method invocation (as argument)
+•MI sets a scope for local vars in terms of params and block interaction.
+•MI uses the scope set by the MD
+
 
