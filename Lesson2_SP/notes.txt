@@ -125,4 +125,40 @@ methods and blocks can interact with one another, the level of that interaction 
 •MI sets a scope for local vars in terms of params and block interaction.
 •MI uses the scope set by the MD
 
+__________________________
+
+Coding Tips 2
+
+Making your code redable is of paramount importance.
+
+Use some new lines to separate the different CONCERNS in the code.
+
+1. variable initialization
+2. user input and validation
+3. using the variable
+
+a method should do one thing, and be names appropiately.
+-if you can treat a method as a 'black box' then it is a well designed method.
+
+ex; method- total returns a value , print total returns nil.
+
+Don't write a method that mutates, outputs and returns a meaningful value.
+Make sure methods just do one of those things
+
+**"we aren't mutating the 'words' object, were mutating each element within 'words'."
+
+•don't mutate the collection while iterating through it.
+you can mutate the individual elents within that collection, just not the collection itself.
+
+********
+whilst iterating through a collection the delete method skips every other element
+********
+
+Variable Shadowing:
+	when you choose a local variable in an inner scope that shares the same name as an outer scope.
+	prevents you from accessing the outer scope variable from an inner scope.
+
+__________________________
+
+
 
