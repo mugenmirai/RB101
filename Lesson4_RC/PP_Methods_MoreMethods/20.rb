@@ -9,6 +9,9 @@ munsters = {
 p munsters.size
 
 
+
+munsters.each do |k, v|
+  if k[
 p munsters["Herman"]['age']
 
 p munsters
