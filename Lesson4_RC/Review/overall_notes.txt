@@ -1,0 +1,108 @@
+collections - structured container for storing data
+collections - lists of data
+collections - made up of individual elements
+
+
+REFERENCING & ASSIGNING
+
+strings use an integer based index, starting at 0.
+
+Arrays are index ordered list of elements.
+ to maintain list order, arrays use integer-based index.
+
+
+SLICE METHOD: distinction returns a new string, returns a new array*
+	*unless a single element is referenced, then that element will be returned
+
+
+Hashes: use key-value pairs (more exanpsive & descriptive collection of elements)
+
+
+
+OUT OF BOUNDS INDICES:
+for strings we know nil is an INVALID VALUE
+however for arrays, it coudl be a valid return value.
+
+valid return? or OOB reference?
+
+
+when reerencing an item by its key you must use the correct object type.
+
+
+Element Assignement:
+
+___________
+
+We can tell 'loop' to iterate a specific number of times by using a variable that tracks the number of iterations performed.
+
+"" in order to prince each character in the string, we need to iterate over the entire string, and use string reference to retrieve each letters based on inders.
+
+LOOP COMPRISES OF FOUR BASIC ELEMENTS
+L O O P <- four elements
+Loop
+Counter
+Way to retrieve the current value
+Way to exit the loop.
+
+
+__________
+PEDAC process
+
+P - [understand the] Problem
+
+E - Examples / Test cases
+
+D - Data Structure
+
+A - Algorithm
+
+C - Code
+
+______
+
+
+selection & transformation
+
+Besided iteration, the two most common actions to perform on a collection are
+
+Selection & Transformation
+
+
+Selecion - is picking certain elements out of a collection based on some criterion
+
+Transformation - manipulating every element in the collection.
+
+SELECTION - if there are 'n' elements in a collection, selection results in n or less elements
+
+TRANSFORMATION - always results in exactly n elements
+
+Selection & Transformation utilize the basics of looping:
+1 Loop
+2 Counter
+3 Way to retrieve the current value
+4 Way to exit the loop
+plus - both require some criteria
+	s -> determine which elements are selected
+	t -> how to perform the operation
+
+
+______________
+
+each sends the value of the current element to the block in the form of an argument
+in this block, the argument to the block is 'num'
+
+the last expression within the method, puts always returns nil
+
+we can use methods provided by Ruby to allow for simpler implementations of common collection manipulation tasks.
+
+
+
+the method only returns true if the block's return value is EVERY iterarion is truthy.
+
+
+as of Ruby 1.9 order is preserved in ruby according to the order of insertion.
+
+
+
+we can determine the block's return value by looking at the return value of the last statement evaluated within the block.
+
