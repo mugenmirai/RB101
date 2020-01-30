@@ -68,7 +68,7 @@ Besided iteration, the two most common actions to perform on a collection are
 Selection & Transformation
 
 
-Selecion - is picking certain elements out of a collection based on some criterion
+Selection - is picking certain elements out of a collection based on some criterion
 
 Transformation - manipulating every element in the collection.
 
