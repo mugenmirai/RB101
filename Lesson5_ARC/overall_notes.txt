@@ -1,0 +1,79 @@
+SORTING
+
+Sorting is mostly performed on arrays. Order of appereance is important.
+
+Sorting is setting the order of the items in a collection according to a certain criterion.
+
+#sort & sort_by
+
+#sort - the RV is a new array with integers ordered sequentially according to their value.
+
+COMPARISON is at the heart of how sorting works (comparing the items in a collection with each other)
+
+
+<=> spaceship operator
+
+The return value of <=> methods is used by sort to determind the order in which to place the items.
+
+	If you want to sort a collection
+		1. Does the object implement a <=> method?
+		2. if so, what is the specific implementation of that object type.
+
+string order is determined by a character's position in the ASCII table.
+
+
+.sort
+.sort_by {|param| code } <- always returns an array, even on a hash
+
+Array#sort! and Array#sort_by! <- only for arrays :: same collection is returned but sorted.
+
+Objects being compared need to implement a <=> method in order for the methods to be used.
+
+.min
+.max
+.minmax
+.min_by
+.max_by
+.minmax_by
+
+\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/
+Nested Data Structures:
+/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\
+
+•referencing collection elements
+•updating collection elements
+
+arr = [[1, 3], [2]]
+arr[0][1] = 5
+
+first part of the chain is 'element reference', second is 'element update'
+
+*we have to chain element reference with appending an element
+
+
+[[[come back and reiterate *other nested structures*]]]
+
+•SHALLOW COPY
+
+.dup  (duplicating affects all)
+.clone  (worKs same) preserves FROZEN state of the object.
+
+///destructive methods were called on the 'object' within the array rather than they array itself
+*it is the object you are affecting, rather than the collection.
+
+"""""every element of arr2 is a reference to the object referenced by the corresponding element in arr1."""
+
+**it is important to be aware at wht level we are working at
+ Are you working at thelevel of an outer array/hash or at the level of an object within that?
+
+
+FREEZING OBJECTS.
+
+only mutable objects can be frozen
+
+only freezes the objects it's called on.
+If the object it's aclled on contains other objects, those objects won't be frozen.
+
+
+DEEP COPY
+
