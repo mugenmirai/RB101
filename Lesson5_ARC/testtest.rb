@@ -5,7 +5,7 @@ def sum_consecutives(arr)
       result << []
     else
       if (elem == arr[idx - 1])
-        result[-2] << elem
+        result[-1] << elem
       else
         result[-1] << arr[idx - 1]
         result << []

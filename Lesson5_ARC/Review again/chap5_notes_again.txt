@@ -1,0 +1,173 @@
+SORTING:
+
+sorting is mostly performed on arrays, since items in arrays are accessed via their index, 
+order of appereance is important.
+
+Strings don't have access to sorting methods, conversion to arrays them must be performed in order to sort.
+
+Sorting is setting the order of the items in a collection according to a certain criterion.
+
+ruby provides sorting methods sush as   #sort #sort_by
+
+#sort returns a new array with items ordered sequentially according to their value.
+
+	*we need to understand how sort applies CRITERION in order to return an ordered collection
+
+COMPARISON IS AT THE HEART OF HOW SORTING WORKS
+
+sorting uses the <=> method to determine the order of items in an array.
+
+  ANY OBJECT IN A COLLECTION WE WANT TO SORT MUST IMPLEMENT A <=> METHOD.
+  <=> performs comparison between objects of the same type (returns a -1 less than, 0 equal to, 1 greater than)
+  		is objects can't be compared NIL is returned.
+
+sort uses the return value of <=> method to determine the order in which to place the items.
+  -1, 0, 1
+
+IMPORTANT to know how <=> peforms comparison FOR the type of object we want to sort.
+
+•doest that object implement a <=> comparison method?
+•yes? what is the specific implementation of that method for that object type.
+
+
+String# uses ASCII character order to determine the results if we compare on ascii char w/ another using String#<=> method.
+
+HOW TO DETERMINE ASCII POSITION:
+call .ord on the string
+
+'b'.ord => 98
+'}'.ord => 125
+
+order:
+
+  D1g1ts and punctuation! ----> UPPERCASE LETTERS ----> lowercase letters
+
+ array of arrays: each object in each array is compared in an 'element-wise' manner, so first object is compared initially.
+
+
+ SORTY BY METHOD #sort_by
+
+sort_by similart to sort, called with a block, code in the block determines how the items are compared.
+
+sort_by always returns an array, even when called on a hash.
+   "so the result is an array with k-v pairs as objects in nested arrays"
+
+
+
+•min
+•min_by
+
+•max     XXX
+•max_by  XXX
+
+•minmax
+•minmax_by
+
+
+______________
+
+NESTED DATA STRUCTURES:
+
+collections, that contain other collections
+
+
+---Referencing Collection elements:   arr=[[1,3] [2]]   arr[0] #=> [1,3]
+
+---Chaining Element References: arr = [[1,3], [2]]  arr[0][1] #=> 3
+
+-x-UPDATING COLLECTION ELEMENTS: 
+arr = [[1, 3], [2]]
+arr[1] = "hi there"
+arr # => [[1, 3], "hi there"]
+
+																										arr = [[1, 3], [2]]
+--- Chain element reference + Chain element update  arr[0][1] = 5
+
+
+
+---------How to insert an additional element into an inner array  // chain element reference with appending an element
+
+
+arr = [[1], [2]]
+
+arr[0] << 3     #=>  [[1, 3], [2]]
+
+
+
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+Other Nested Data Structures
+
+Hashes can be nested within arrays as well!
+
+arr = [{ a: 'ant' }, { b: 'bear' }]
+
+arr[0][:c] = 'cat'
+arr # => [{ :a => "ant", :c => "cat" }, { :b => "bear" }]
+
+/////////////////////////////////////
+
+variable reference for nested collections
+
+
+
+
+\\\\\\\\\\\\\\
+
+Shallow Copy
+
+.dup
+.clone
+
+both these methods create a shallow copy of an object, including collection.
+only the object that the method is called on is copied (of ojb contains other objecsts say 'nested arrays'
+								those objects will be shared - NOT COPIED
+
+when destructive methods are called on an object within an inner collection (ojbect itself) you are affecting the object, not the collection.
+
+"""every element of 'arr2' is a reference to the object referenced by the corresponding element in 'arr1''''
+''we change the array elements, not the array''
+
+Be aware of what level you are working at, spec working w/ nested collections and uses VARS as pointer.
+Are you working at the level of an outer array/hash, or at the level of an object within that.
+
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+FREEZING OBJECTS
+
+.clone preserves the frozen state of the object.
+
+
+
+FREEZING: objects can be frozen to prevent them from being modified
+
+
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+////////////////////////////////////
+
+
+
+WORKING WITH BLOCKS [0u0] !  'ピコピコ！'
+
+
+
+"""each always returns the calling object, doesn't care about the block returned value.
+by calling each after map WE CAN SEE THAT the return value of map will be a new array that matches the value of
+the calling object.
+
+
+
+
+DO NO MUTATE THE COLLECTION THAT YOU'RE ITERATING THROUGH!
+since iterations is the basis of selection and transformation
+
+
+
+
+
+
+
+
