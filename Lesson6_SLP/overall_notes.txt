@@ -1,0 +1,37 @@
+LESSON 6:  Slightly Larger Programs
+
+
+Approaches:
+	1. break problem down into smaller pieces.
+	2. Map out the flow of the program in a flowchart, using sub-processes to encapsulate well-defined components of the problem
+	3. When you're ready to tackle a component or sub-process, write out the pseudo-code for that sub-process only.
+	Come up with clear inputs for the sub-process, and clear outputs you expect from the sub-process.
+	4. Play around with the code.  Write every line of code and make sure you understand it.
+	5. Do the assignments in sequence.
+	6. Don't be afraid of watching the walkthrough videos.
+
+
+
+PRY VIDEO NOTES:
+
+
+require 'pry'
+require	'pry-byebug'
+
+we can in terminal command form enter a a variable // cd arr -> pry(#<Array>):1> ls
+
+cd
+
+ls - lists Enum methods, Array methods, self.methods, locals:
+
+---pre-byebug
+
+whereami
+
+next
+
+continue
+
+show-doc <insert method name here>
+
+******what is: 'step' ??
