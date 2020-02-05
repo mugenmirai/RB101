@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require 'pry'
 
 EMPTY_MARKER = ' '
@@ -11,7 +9,7 @@ WINNING_LINES = [[1, 2, 3], [4, 5, 6], [7, 8, 9]] +
                 [[1, 5, 9], [3, 5, 7]]
 
 def prompt(msg)
-  puts "=>#{msg}"
+  puts "=> #{msg}"
 end
 
 # rubocop:disable Metrics/AbcSize
@@ -173,8 +171,9 @@ def choose_current_player
   choice = ''
   loop do
     puts "
-    Would you like to go first? if so enter 'y',
-    otherwise enter 'n' and computer will start the round."
+    WHO GOES FIRST?
+    enter 'y' to go first,
+    enter 'n' for the computer to go first!"
     choice = gets.chomp.downcase
     break if choice.start_with?('y') || choice.start_with?('n')
 
@@ -198,7 +197,6 @@ loop do
   current_round = 0
   loop do
     board = initialize_board
-    # current_player = 'choose'
     loop do
       display_game(board)
       intro
@@ -209,6 +207,13 @@ loop do
         current_player = choose_current_player
       end # && score_board.values.all?(0)
       place_piece!(board, current_player)
+      print "#{current_player} selection processing"
+      print "..."
+      sleep 0.7
+      print "..."
+      sleep 0.5
+      puts "..."
+      sleep 0.3
       current_player = alternate_player(current_player)
       # binding.pry
       if someone_won?(board) || board_full?(board)
