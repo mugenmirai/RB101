@@ -1,0 +1,27 @@
+1. SET CONSTANTS
+			empty square
+			player marker
+			computer/other player marker
+			conditions to win aka winning lines
+
+2. Prompt output
+
+3. display_board(brd)  Method to display a board, and be updated.
+
+4. initialize_board // set a hash with ints 1-9 as keys, all with ' ' values.  Outputs a new clean board.
+
+5. empty_squares(brd) method #shows empty available squares
+
+6. player_pieces_piece!(brd)
+	checks available squares, if avail marks them, exits, otherwise loops. Returns the brd[square] value set as the Player Marker.
+
+7. computer_places_piece!(brd) method
+		easily random chooses from avail squares ((uses 5.))
+
+8. board_full?(brd) method
+	uses 5 to check if it is empty?
+
+9. someone_won?(brd) method
+	uses (( )) detect_winner(brd) method !! to return false or string
+
+10. detect_winner(brd)

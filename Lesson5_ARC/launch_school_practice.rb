@@ -51,7 +51,7 @@ loop do
 
 
 def accum(str)
-  str.split("").map.with_index do |char , idx\ 
+  str.split("").map.with_index do |char , idx| 
     char * idx +1. capitalize
     join ("0"_)
 
