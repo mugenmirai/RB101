@@ -1,0 +1,90 @@
+card labels
+card suit labels
+
+[suits icon, ranks numbers]
+
+
+
+Assignment: Twenty-One
+
+Rules:
+
+	•start with 52 card deck (4 suits, 13 values (2..10 + Jack, Queen, King, Ace)) no jokers.
+
+	•add up to near or 21, going over > 21 == 'bust'
+
+	•'dealer' & 'player', 2 cards each ( can see both player, only 1 dealer)
+
+	• cards 2-10 worth face value
+	• Jack, King, Queens == 10
+	• Ace 1 || 11 (program should choose its value depending on current total)
+
+	•Player goes first // 'hit' or 'stay'
+		hit == draw another card, stay skip round wait for dealer to act
+
+	•Dealer must hit until total is <= 17, busts = player wins
+
+	•COMPARE CARDS - when both stay compare total value
+
+___________________________
+given:
+
+1. Initialize deck
+2. Deal cards to player and dealer
+3. Player turn: hit or stay
+	-repeat until bust or 'stay'
+4. If player bust, dealer wins.
+5. Dealer turn: hit or stay
+	-repeat until total >= 17
+6. If dealer bust, player wins.
+7. Compare cards and declare winner.
+
+___________________________
+
+After research, tests, and merges:
+
+1. Use classic LS 'prompt_method'
+
+2. Initialized deck method: suits * ranks in order of lesson assignment
+		pair Hearts ♥, Diamonds ♦, Clubs ♣, Spades ♠ with integers 1..13
+		52 cards total (13 ranks for each suit)
+
+3. Shuffle current cards, should return same size in random order, 2 element pairs with an integer as the item at index 0
+ use ! since we are going to mutate the original deck in order to save code and logic that can cause further errors.
+
+4. Card value method to simplify what 'Ace' will evaluate to and in which conidition (is it 1? 11? (ternary seems to work)
+
+5. have a way to account for cards, show current hand holds, need a way to calculate a total, move to another method
+
+6. calculate method using inject passing to block paramets get current sum.
+
+7. OG card label method (not using modules or enum yet, relying on multiple assignment, hash element reference/assignment and logical or
+**remember ORDER OF PRECEDENCE!** can always relay on parentheses.
+card suit and labels -> hashes
+return a string with interpolated values at end.
+
+8. deal the cards, since were mutating the dect, use ! suffix.
+
+9. display current hand method, use 6 calculate method, return string interpocated with valued, invoke 5 verify cards
+
+10. Was influenced from previous readings to move the main play into larger method.
+*** see if we can extract conditionals to outiside methods
+use sleep method with a random '.' size generator to give it some life
+its too static, this makes it seem like something is going on behind the scenes, brings in suspense
+
+(player_total > 21) ? result[:one] : (player_total == 21 && dealer_total != 21) ? result[:two] : (player_total > dealer_total) ? resul[:three]
+  
+  result = { 
+  one: "Player busts! #{player_total}", two: '21! A winner!', 
+  three: 'Player wins!', four: 'Dealer busts! Player wins', 
+  five: "It's a tie!", six: 'Dealer wins!' }
+
+
+11. start a loop so that user can restart game from new, and initalize everything anew.
+Give option to restart, or quit completely.
+
+
+### if time allows, see away to display a current total score,
+Seems hard since we arent using class methods yet, or instance variables
+in order to track how many games have been totally won simply.
+Constants are giving me trouble achieving this on a main counter inside a class.
