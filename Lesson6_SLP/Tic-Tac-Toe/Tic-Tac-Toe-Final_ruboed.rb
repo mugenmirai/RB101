@@ -126,7 +126,7 @@ def detect_winner(board)
 end
 
 def intro
-  puts ''"
+  puts """
 ><><><><><><><><><><><><><><><><><><><
  ><><>< Let's play Tic-Tac-Toe ><><><
 ><><><><><><><><><><><><><><><><><><><
@@ -135,7 +135,7 @@ You need to pick 3 squares in a row to win a round.
 (can be straight, horizontal, or diagonal)
 To win the game you must win #{WIN_SCORE} matches to win the entire game.
 Careful though, this is the tough version of the game!
-  "''
+  """
 end
 
 def display_score(scr)
@@ -192,8 +192,6 @@ loop do
       intro
       prompt "CURRENT ROUND: #{current_round}"
       prompt display_score(score_board)
-      puts current_player.to_s
-      sleep 1
 
       current_player = choose_current_player if current_player == 'none'
       place_piece!(board, current_player)
@@ -206,9 +204,7 @@ loop do
       sleep 0.3
       current_player = alternate_player(current_player)
       if someone_won?(board) || board_full?(board)
-        if someone_won?(board) != 'computer'
-          current_player = alternate_player(current_player)
-        end
+        current_player = alternate_player(current_player)
         current_round += 1
         break
       else

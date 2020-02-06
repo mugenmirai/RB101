@@ -87,4 +87,4 @@ Give option to restart, or quit completely.
 ### if time allows, see away to display a current total score,
 Seems hard since we arent using class methods yet, or instance variables
 in order to track how many games have been totally won simply.
-Constants are giving me trouble achieving this on a main counter inside a class.
+Constants are giving me trouble achieving this on a main counter inside a class 

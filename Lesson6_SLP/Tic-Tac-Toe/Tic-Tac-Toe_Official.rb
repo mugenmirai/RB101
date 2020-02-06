@@ -140,8 +140,8 @@ def display_score(scr)
   "SCOREBOARD - PLAYER: #{scr['player']} || COMPUTER: #{scr['computer']} || TIES: #{scr['tie']}"
 end
 
-def update_score_board(scoreboard, result)
-  result ? (scoreboard[result] += 1) : (score_board['tie'] += 1)
+def update_score_board(score_board, result)
+  result ? (score_board[result] += 1) : (score_board['tie'] += 1)
 end
 
 def match_ended?(score_board)
