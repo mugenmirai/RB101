@@ -1,0 +1,89 @@
+en: 
+  start_select_language: "Starting Mortgage Calculator\n
+  Calculadora de hipotecas está comenzando...\n
+  住宅ローン計算機始まっています...\n
+'en' => Please enter 'en' to continue in English,\n
+'es' => Para Español por favor ingrese 'es',\n
+'jp' => 日本語の場合は'jp'と入力します、お願いします"
+  select_language: "Please enter 'en' to continue in English,\n=> Para Español por favor ingrese 'es',\n=> 日本語の場合は'jp'と入力します、お願いします"
+  wrong_language: "Sorry wrong input / Disculpe, selección incorrecta / ごめん間違った選択"
+  chosen_language: "You chose English"
+  name: "To begin please tell me your name: "
+  error_empty_name: "Ooops, please enter a name: "
+  welcome: " ==============================\n
+Welcome to Mortage Calculator!\n
+=============================="
+  welcome_2: " =============================\n
+This is \"Mortage Calculator!\"\n
+============================="
+  loan_amount: "Please enter the loan amount:"
+  wrong_loan_amount: "Error: Please enter a valid amount, whole numbers only"
+  invalid_apr: "invalid APR "
+  apr: "Please enter the lender's Annual Percentage Rate (APR): \nExample: enter 1 for 1%, enter 2.5 for 2.5%"
+  invalid_apr: "Oops; only whole numbers or numbers with decimals are accepted."
+  years: "How many years will the loan be for?\n (enter whole numbers please)"
+  years_error: "Ooop; only whole numbers are accepted (Example: 5, 10)"
+  show_monthly_payment: "Your monthly payment will be"
+  again: "Would you like to do another calculation?\n => enter 1 for yes, 2 for no and exit"
+  again_error: "Sorry, must enter 1 for yes, 2 for no"
+  another_calc: "Restarting calculator"
+  thank_you: " =========================================\n
+Thank you for using \"Mortage Calculator!\"\n
+=========================================\n We wish you the best, you can do it!"
+  current_user: "Current user:"
+  loan_display: "Loan Amount:"
+
+es:
+  welcome: "in spanish Welcome to the Mortgage Calculator"
+  chosen_language: "Usted eligio Español"
+  name: "Para comenzar por favor ingrese su nombre: "
+  error_empty_name: "Oh Oh disculpe, por favor ingrese un nombre: "
+  welcome: " =========================================\n
+Bienvenido a la calculadora de hipotecas!\n
+========================================+"
+  welcome_2: " ======================================\n
+Esta es la \"CALCULADORA DE HIPOTECAS\"!\n
+======================================"
+  loan_amount: "Por favor ingrese el monto del préstamo: "
+  wrong_loan_amount: "Error: Ingrese una cantidad válida, solo números enteros"
+  apr: "Por favor ingrese la tasa de porcentaje anual del prestamista (APR):\n Ejemplo: ingrese 1 para 1%, ingrese 2.5 para 2.5%"
+  invalid_apr: "Disculpe; Solo se aceptan enteros o números con decimales"
+  years: "¿Por cuántos años será el préstamo?\n (ingrese números enteros por favor)"
+  years_error: "Disculpe; solo se aceptan números enteros (Ejemplo: 5, 10, etc)"
+  show_monthly_payment: "Su pago mensual será"
+  again: "¿Te gustaría hacer otro cálculo?\n => ingrese 1 para sí, 2 para no y salir"
+  again_error: "Lo sentimos, debe ingresar 1 para sí, y 2 para no."
+  another_calc: "Reiniciando la calculadora"
+  thank_you: " ==============================================\n
+Gracias por usar la \"CALCULADORA DE HIPOTECAS\"!\n
+==============================================\n ¡Te deseamos lo mejor, buena suerte!"
+  current_user: "Usuario:"
+  loan_display: "Monto del préstamo:"
+
+
+jp:
+  welcome: "in Japanese Welcome to the Mortgage Calculator"
+  chosen_language: "あなたは日本語が選択しました"
+  name: "始めるためにあなたの名前を入力してください"
+  error_empty_name: "おっと ごめん、名前を入力してください"
+  welcome: " ===========================\n
+住宅ローン計算機へようこそ!\n
+==========================="
+  welcome_2: " ===========================\n
+これは住宅ローン計算機です!\n
+==========================="
+  loan_amount: "ローン金額を入力してください: "
+  wrong_loan_amount: "エラーごめん: 有効な金額を入力してください、整数のみ"
+  apr: "貸し手の年率'APR'を入力してください、\n例：1％に1を入力し、2.5％に2.5を入力します"
+  invalid_apr: "ごめん、整数または小数付きの数値のみが受け入れられます"
+  years: "ローンの期間は何年ですか (整数全体を入力してください)"
+  years_error: "整数のみが受け入れられます (たとえば、5、10など)"
+  show_monthly_payment: "毎月のお支払いは:"
+  again: "別の計算を行いますか？\n => はいの場合は'1'、いいえの場合は'2'を入力して終了します"
+  again_error: "申し訳ありませんが、はいの場合は1、いいえの場合は2を入力する必要があります"
+  another_calc: "電卓が再起動します"
+  thank_you: " =====================================================\n
+住宅ローン計算機をご利用いただきありがとうございます!\n
+=====================================================\n どうぞよろしくお願いします！ 頑張って！"
+  current_user: "ユーザー:"
+  loan_display: "ローン額:"
